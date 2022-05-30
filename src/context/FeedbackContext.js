@@ -21,7 +21,7 @@ export const FeedbackProvider = ({ children }) => {
       rating: 10,
     },
   ])
-
+//moved from app.js to context
   const deleteFeedback = (id) => {
     if (window.confirm('Are you sure you want to delete?')) {
       setFeedback(feedback.filter((item) => item.id !== id))
